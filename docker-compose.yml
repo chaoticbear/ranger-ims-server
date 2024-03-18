@@ -1,8 +1,8 @@
 version: '3.7'
 
 services:
-  ims_server: 
-    container_name: ims_server
+  app: 
+    container_name: ranger_ims_server
     user: :${DAEMON_GROUP_ID:-1420}
     build:
       dockerfile: ./dev.Dockerfile
