@@ -11,3 +11,8 @@ services:
     ports:
      - ${IMS_SERVER_PORT:-8080}:8080
     command: "tox run -e exec"
+    
+networks:
+  default:
+    external: true
+    name: "${DOCKER_RANGERS_NETWORK:-rangers}"
