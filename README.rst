@@ -51,6 +51,10 @@ Run::
     cp conf/imsd-docker-compose-sample.conf conf/imsd.conf
     cp conf/directory-sample.yaml conf/directory.yaml
 
+    If you need to override any of the environment variables set in 
+    `docker-compose.yml`, copy `.docker/sample.env` to `/.env` and 
+    uncomment and edit the neccessary variables.
+
     docker compose up
 
 ------------------
@@ -86,6 +90,7 @@ Use the pull-down menu at the top right corner of the page (it will show the log
 In the box labeled ``Access for Test (writers)``, enter the string ``*``.  That will give all users the ability to create and edit incidents in that event.
 
 You should now be able to select your new event from the ``Event`` menu at the top right, and then create new incidents within that event.
+
 
 Pull Requests
 ~~~~~~~~~~~~~
